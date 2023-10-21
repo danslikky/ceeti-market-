@@ -64,11 +64,11 @@
     let total = 0;
     if (prices) {
       total = calculateTotal(prices);
-      totalPriceContainer.innerHTML = `<span class="total">Total: $${total.toFixed(
+      totalPriceContainer.innerHTML = `<span class="total">Total: $₦{total.toFixed(
         2
       )}</span>`;
     } else {
-      totalPriceContainer.innerHTML = '<span class="total">Total: $0</span>';
+      totalPriceContainer.innerHTML = '<span class="total">Total: ₦0</span>';
     }
   }
 
