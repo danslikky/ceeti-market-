@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title></title>
+    
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style2.css">
+	
+
+	  
+  
+  </head>
+  <body>
+
+      
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+   <header class="header">
+  <div class="container header__top"><br>
+    <div class="header__logo">
+      <div class="header">  <img src="4.png" alt=""></div>
+    </div>
+    <div class="header__cart">
+      <ul>
+        <li class="header__submenu" id="submenu">
+          <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+</svg> Your Cart</button>
+          <div style="border:1px solid #f06060;border-radius: 5px;" id="shopping-cart" class="shopping-cart-container">
+            <table id="cart-content">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p class="total-container" id="total-price"></p>
+            <a href="checkout.html" id="checkout-btn5" class="cart-btn">Checkout</a>
+            <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
+</header>
+<style>
+  nav ul li{
+ list-style: none;
+ margin-top: 10px;
+ padding-left: 5px;
+ padding-right: 5px;
+ color: #000000;
+ font-weight: 700;
+}
+nav ul{
+  display: flex;
+  margin-left: 10px;
+  
+}
+nav{
+  background-color: #f06060;
+  height: 40px;
+}
+.span{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;}
+nav ul li a{
+  text-decoration: none;
+  color: #000000;
+}
+</style>
+<nav>
+  <ul>
+    <li><a href="about.html">About   </a></li>
+    <li><a href="contact.html">Contact   </a></li>
+    <li><a href="4.html">Product   </a></li>
+    <li><a href="checkout.html">Checkout</a></li>
+  </ul>
+</nav>
+
+
+<main class="container page-content">
+ <h3 style="font-size: 25px;text-align: center;"><span class="span">Discover Our</span> <br>
+    Popular Food stuff</h3><br>
+  <div class="grid" id="grid">
+    <div class="card">
+      <img src="./img/image-1.jpg" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Organic Tomatoes</h4>
+        
+        <p class="card__price">$20</p>
+        <button class="card__btn add-to-cart" data-id="6">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/image-2.jpg" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Organic Cabbage</h4>
+      
+        <p class="card__price">$10</p>
+        <button class="card__btn add-to-cart" data-id="7">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/image-3.jpg" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Organic Carrots</h4>
+        
+        <p class="card__price">$15</p>
+        <button class="card__btn add-to-cart" data-id="8">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/image-4.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Organic Onions</h4>
+       
+        <p class="card__price">$5</p>
+        <button class="card__btn add-to-cart" data-id="9">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/image-5.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Organic Okoro</h4>
+        
+        <p class="card__price">$7</p>
+        <button class="card__btn add-to-cart" data-id="10">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/image-6.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Organic Pumpkin</h4>
+        
+        <p class="card__price">$30</p>
+        <button class="card__btn add-to-cart" data-id="11">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/image-8.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Organic Cherry</h4>
+        
+        <p class="card__price">$25</p>
+        <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+  </div>
+</main>
+
+  
+ </main>
+ <style>
+   .footer_img{
+  width: 160px;
+ margin-top: 10px;
+}
+
+footer{
+  color: #fff;
+  background-color: #000000;
+  width: 105%;
+  margin-left: -7px;
+  margin-bottom: -8px;
+}
+footer p{
+  font-size: 14px;
+  padding: 20px;
+  padding-left: 25px;
+  margin-top: -30px;
+}
+.foot_link{
+  padding: 20px;
+  margin-left: 15px;
+  margin-top: -25px;
+}
+.foot_link h3{
+  color: #f06060;
+}
+.foot_link ul li{
+  list-style: none;
+}
+.foot_link ul li a{
+
+  color: #fff;
+  font-size:15px;
+  
+}
+.foot_p a{
+  text-decoration: none;
+  color: #f06060;
+}
+.foot_p{
+  margin-left: 10px;
+}
+.product{
+  text-align: center;
+}
+ </style>
+ <br><br><br>
+      <footer>
+ <div>
+   <img class="footer_img" src="3.png" alt="logo">
+   <p>Your satisfaction is our top priority, and we can't wait to serve you the best in the world of food</p>
+ </div> <br>
+ <div class="foot_link"><h3>Quick Link</h3><br>
+ <ul>
+   <li><a href="about.html">About us</a></li>
+   <li><a href="contact.html">Contact</a></li>
+   <li><a href="4.html">Product</a></li>
+   <li><a href="checkout.html">Checkout</a></li>
+ </ul> <br>
+ <br>
+ <p class="foot_p">Copyright ©️ 2023 <span><a href="index.html">Ceeti Market</a></span></p>
+ </div>
+</footer>
+
+  
+  <script  src="./js/script.js"></script>
+  </body>
+</html>
